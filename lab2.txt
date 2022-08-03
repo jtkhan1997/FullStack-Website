@@ -1,0 +1,12 @@
+Lab2.php = reg and login page
+admin.php = admin page
+homepage.php = home page
+infoSQL.php = connects to database and validates users/stores them in database
+lab2.mysql = database dump
+style.css = style sheet
+
+Extra Credit: Salt and Hash: Managed to save hash and display it in table in admin page
+	      Single Page: Could not make it a single main page, I managed to get reg/log in to be in one page without
+	      having both on screen, but I tried to apply that same method to everything else by making the submit
+	      button just a 'button' and run a javascript to do the validation, but it got really confusing and convoluted
+	      but I did try.

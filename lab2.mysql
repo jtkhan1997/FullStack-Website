@@ -1,0 +1,73 @@
+-- phpMyAdmin SQL Dump
+-- version 4.9.5
+-- https://www.phpmyadmin.net/
+--
+-- Host: localhost:8889
+-- Generation Time: Aug 24, 2021 at 02:41 AM
+-- Server version: 5.7.24
+-- PHP Version: 7.4.1
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Database: `lab2`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `users`
+--
+
+CREATE TABLE `users` (
+  `userId` int(11) NOT NULL,
+  `username` varchar(80) NOT NULL,
+  `password` varchar(80) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `users`
+--
+
+INSERT INTO `users` (`userId`, `username`, `password`) VALUES
+(29, 'jay', '$2y$10$pn9Mns1xj19MO6WsqhTDiufln1fUlxUlTpJuoCtGS79Y4RHKK/Xhe'),
+(30, 'Administrator', '$2y$10$M19GLrj.uhIYVrccMEUjTeD5j12dinJ4hbqWfmZe/lwikXFwdmJEG'),
+(31, 'user', '$2y$10$Mm4tuvDHZB9nLD2eouavR.48gHraKRF8ds0M3sbqcpkhekqrZAniK'),
+(32, 'xyza', '$2y$10$QibX0w7uwKpDR.do5wzKVe5sPInjyJtMBU9iJD8F9WCuf37oHR5Lq'),
+(33, 'xyyy', '$2y$10$8oNJbw42AnkIvDoXQCXosueLGsIgJEiY7DYNoK8fsR5UdrGyCdP9.'),
+(34, 'cccccc', '$2y$10$vnzV4BoB/Z7iwEAg6n1MUumnL1l/cZXybJ/81FLSEMxe7It20Co3C'),
+(35, 'hhhhhhh', '$2y$10$WrRoMC.W37M9rbdKWiThpe0AMGlgjvx.FzDt8HOa.kFIKMApF5NaW');
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `users`
+--
+ALTER TABLE `users`
+  ADD PRIMARY KEY (`userId`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `users`
+--
+ALTER TABLE `users`
+  MODIFY `userId` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=36;
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

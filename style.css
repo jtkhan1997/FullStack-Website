@@ -1,0 +1,23 @@
+
+.form{
+	background: #BBF497;
+	padding: 70px 0;
+	text-align: center;
+	margin-top: 100px;
+	margin-left: 300px;
+	margin-right: 300px;
+}
+
+.home {
+	background: #F4D497;
+	padding: 70px 0;
+	text-align: center;
+	margin-left: 300px;
+	margin-right: 300px;
+}
+
+.form .flag {
+}
+.form .registerForm{
+	display: none;
+}
